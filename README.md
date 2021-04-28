@@ -1,6 +1,6 @@
 # Data_Mining-Study
 
-# 목차
+## 주차별 학습 내용
 ...
 - [x] week 3 (21.04.01) // Pandas data analysis, K-means
 - [x] week 4 (21.04.08) // Hierarchical Clustering, PCA   
