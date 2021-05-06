@@ -5,4 +5,5 @@
 - [x] week 3 (21.04.01) // Pandas data analysis, K-means
 - [x] week 4 (21.04.08) // Hierarchical Clustering, PCA   
 - [x] week 5 (21.04.15) // ARI(Adjusted Rand Index, NMI(Normalized Mutual Information, Silhouette
-- [ ] week 6 (21.04.29) // naive Bayes classification, cross-validation
+- [x] week 6 (21.04.29) // Naive Bayes classification, Cross-validation
+- [x] week 7 (21.05.06) // Decision tree
