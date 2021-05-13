@@ -7,4 +7,4 @@
 - [x] week 5 (21.04.15) // ARI(Adjusted Rand Index, NMI(Normalized Mutual Information, Silhouette
 - [x] week 6 (21.04.29) // Naive Bayes classification, Cross-validation
 - [x] week 7 (21.05.06) // Decision tree
-- [x] week 8 (21.05.13) // Bagging / Boosting, Random Forest
+- [x] week 8 (21.05.13) // Random Forest, Ensemble Learning(Bagging, Boosting) 
