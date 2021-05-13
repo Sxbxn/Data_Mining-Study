@@ -1,0 +1,38 @@
+의사결정나무(decision tree)**는 여러 가지 규칙을 순차적으로 적용하면서 독립 변수 공간을 분할하는 분류 모형
+
+의사결정나무는 분류와 회귀 모두 가능한 지도 학습 모델 중 하나이며,
+
+결과 모델이 Tree 구조를 가지고 있기 때문에 Decision Tree라는 이름을 가집니다.
+
+매우 직관적인 분류모델, 자료의 결과를 해석하기가 용이함
+
+결정 트리는 스무고개 하듯이 예/아니오 질문을 이어가며 학습합니다. 매, 펭귄, 돌고래, 곰을 구분한다고 생각해봅시다. 매와 펭귄은 날개를 있고, 돌고래와 곰은 날개가 없습니다. '날개가 있나요?'라는 질문을 통해 매, 펭귄 / 돌고래, 곰을 나눌 수 있습니다. 매와 펭귄은 '날 수 있나요?'라는 질문으로 나눌 수 있고, 돌고래와 곰은 '지느러미가 있나요?'라는 질문으로 나눌 수 있습니다. 아래는 결정 트리를 도식화한 것입니다.
+
+특정 기준(질문)에 따라 데이터를 구분하는 모델을 결정 트리 모델이라고 합니다. 한번의 분기 때마다 변수 영역을 두 개로 구분합니다. 결정 트리에서 질문이나 정답을 담은 네모 상자를 노드(Node)라고 합니다. 맨 처음 분류 기준 (즉, 첫 질문)을 Root Node라고 하고, 맨 마지막 노드를 Terminal Node 혹은 Leaf Node라고 합니다.
+
+1 여러가지 독립 변수 중 하나의 독립 변수를 선택하고 그 독립 변수에 대한 기준값(threshold)을 정한다. 이를 분류 규칙이라고 한다. 최적의 분류 규칙을 찾는 방법은 이후에 자세히 설명한다.
+2 전체 학습 데이터 집합(부모 노드)을 해당 독립 변수의 값이 기준값보다 작은 데이터 그룹(자식 노드 1)과 해당 독립 변수의 값이 기준값보다 큰 데이터 그룹(자식 노드 2)으로 나눈다.
+3 각각의 자식 노드에 대해 1~2의 단계를 반복하여 하위의 자식 노드를 만든다. 단, 자식 노드에 한가지 클래스의 데이터만 존재한다면 더 이상 자식 노드를 나누지 않고 중지한다.
+=> 이렇게 자식 노드 나누기를 연속적으로 적용하면 노드가 계속 증가하는 나무(tree)와 같은 형태로 표현할 수 있다.
+분류규칙 정하는 방법
+
+분류 규칙을 정하는 방법은 부모 노드와 자식 노드 간의 엔트로피를 가장 낮게 만드는 최상의 독립 변수와 기준값을 찾는 것이다. 이러한 기준을 정량화한 것이 정보획득량(information gain)이다. 기본적으로 모든 독립 변수와 모든 가능한 기준값에 대해 정보획득량을 구하여 가장 정보획득량이 큰 독립 변수와 기준값을 선택한다.
+
+정보획득량
+
+정보획득량(information gain)는 X라는 조건에 의해 확률 변수 Y의 엔트로피가 얼마나 감소하였는가를 나타내는 값이다. 다음처럼 Y의 엔트로피에서 X에 대한 Y의 조건부 엔트로피를 뺀 값으로 정의된다.
+
+(Pi = 한 영역 안에 존재하는 데이터 가운데 범주 i에 속하는 데이터의 비율)
+결측치 – 데이터의 값이 없는 것
+
+https://blog.naver.com/PostView.nhn?blogId=winddori2002&logNo=221659080425&parentCategoryNo=1&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+https://wooono.tistory.com/104
+https://niceman.tistory.com/169
+https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-4-%EA%B2%B0%EC%A0%95-%ED%8A%B8%EB%A6%ACDecision-Tree
+https://datascienceschool.net/03%20machine%20learning/12.01%20%EC%9D%98%EC%82%AC%EA%B2%B0%EC%A0%95%EB%82%98%EB%AC%B4.html
+https://todayisbetterthanyesterday.tistory.com/39
+https://todayisbetterthanyesterday.tistory.com/38
+http://hleecaster.com/ml-decision-tree-concept/
+https://jfun.tistory.com/41
+https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-4-%EA%B2%B0%EC%A0%95-%ED%8A%B8%EB%A6%ACDecision-Tree
+https://blog.daum.net/geoscience/1312
