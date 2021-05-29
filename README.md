@@ -9,4 +9,4 @@
 - [x] week 7  (21.05.06) // Decision tree
 - [x] week 8  (21.05.13) // Random Forest, Ensemble Learning(Bagging, Boosting) 
 - [x] week 9   (21.05.20) // Adaboost
-- [ ] week 10 (21.05.27) // Expectation Maximization (EM)
+- [x] week 10 (21.05.27) // Expectation Maximization (EM)
