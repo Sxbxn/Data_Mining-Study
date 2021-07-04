@@ -10,4 +10,4 @@
 - [x] week 8  (21.05.13) // Random Forest, Ensemble Learning(Bagging, Boosting) 
 - [x] week 9   (21.05.20) // Adaboost
 - [x] week 10 (21.05.27) // Expectation Maximization (EM)
-- [ ] 마무리 (~ 21.06.30) // 최종 보고서
+- [x] 마무리 (~ 21.06.30) // 최종 보고서  
